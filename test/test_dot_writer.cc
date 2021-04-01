@@ -1,8 +1,8 @@
 #include <fstream>
 #include <iostream>
 
-#include "dot_writer.h"
-#include "tree_definitions.h"
+#include "bst/dot_writer.h"
+#include "bst/tree_definitions.h"
 
 int main() {
   bst::Node<int>* root = nullptr;

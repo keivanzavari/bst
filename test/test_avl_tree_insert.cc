@@ -1,7 +1,7 @@
 #include <fstream>
 
-#include "avl_tree.h"
-#include "dot_writer.h"
+#include "bst/avl_tree.h"
+#include "bst/dot_writer.h"
 
 namespace avl {
 void testRightRight() {

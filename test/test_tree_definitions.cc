@@ -1,7 +1,8 @@
 #include <fstream>
 
-#include "dot_writer.h"
-#include "tree_definitions.h"
+#include "bst/dot_writer.h"
+#include "bst/tree_definitions.h"
+
 namespace bst {
 void testRightRotation() {
   /**

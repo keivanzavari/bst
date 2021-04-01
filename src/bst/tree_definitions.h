@@ -100,30 +100,30 @@ Node<T>* replace_child(Node<T>* parent, Node<T>* new_node, Direction direction) 
 
 template <typename T>
 Node<T>* delete_node(Node<T>* node) {
-  if (node) {
-    // Node<T>* child = nullptr;
-    // if (direction == Direction::LEFT) {
-    //   child = parent->left;
-    // } else {
-    //   child = parent->right;
-    // }
-    // if (!child) {
-    //   return parent;
-    // }
+  // if (node) {
+  //   // Node<T>* child = nullptr;
+  //   // if (direction == Direction::LEFT) {
+  //   //   child = parent->left;
+  //   // } else {
+  //   //   child = parent->right;
+  //   // }
+  //   // if (!child) {
+  //   //   return parent;
+  //   // }
 
-    if (!ndoe->left && !ndoe->right) {
-      node = nullptr;
-    } else if (child->left && !child->right) {
-      node = node->left;
-    } else if (!child->left && child->right) {
-      node = node->right;
-    } else {
-      // When the to-be-deleted node has both left and right children.
-      // Find predecessor or successor and replace the node with that one. Here we find successor.
-      auto succ = findSuccessor(child);
-    }
-    res = correctHeight(res);
-  }
+  //   if (!ndoe->left && !ndoe->right) {
+  //     node = nullptr;
+  //   } else if (child->left && !child->right) {
+  //     node = node->left;
+  //   } else if (!child->left && child->right) {
+  //     node = node->right;
+  //   } else {
+  //     // When the to-be-deleted node has both left and right children.
+  //     // Find predecessor or successor and replace the node with that one. Here we find successor.
+  //     auto succ = findSuccessor(child);
+  //   }
+  //   res = correctHeight(res);
+  // }
   return node;
 }
 

@@ -14,7 +14,6 @@ int main() {
   }
 
   std::cout << "root: " << root->value << "\n";
-  // std::cout << "child: " << root->right->value << "\n";
   std::ofstream myfile("example.dot");
   bst::exportDot(myfile, root);
 

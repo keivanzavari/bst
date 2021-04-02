@@ -1,5 +1,7 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.12)
 project(bst)
+
+add_definitions(-std=c++17)
 
 include_directories(src)
 add_subdirectory(lib/Catch2)

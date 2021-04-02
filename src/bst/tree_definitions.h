@@ -139,6 +139,7 @@ Node<T>* delete_node(Node<T>* node) {
         parent->left = nullptr;
       }
     }
+    // This step is necessary for AVL trees but not implemented here.
     //   res = correctHeight(res);
   }
   return node;

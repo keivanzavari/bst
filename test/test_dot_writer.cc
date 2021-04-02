@@ -1,10 +1,11 @@
+#include <catch2/catch.hpp>
 #include <fstream>
 #include <iostream>
 
 #include "bst/dot_writer.h"
 #include "bst/tree_definitions.h"
 
-int main() {
+TEST_CASE("test_dot_writer", "dot witer") {
   bst::Node<int>* root = nullptr;
   root = bst::insert(root, 100);
   int value = 2;
@@ -16,6 +17,4 @@ int main() {
   std::cout << "root: " << root->value << "\n";
   std::ofstream myfile("example.dot");
   bst::exportDot(myfile, root);
-
-  return 0;
 }

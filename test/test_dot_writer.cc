@@ -7,8 +7,10 @@
 int main() {
   bst::Node<int>* root = nullptr;
   root = bst::insert(root, 100);
-  for (int i = 0; i < 10; ++i) {
-    bst::insert(root, i);
+  int value = 2;
+  for (int i = 1; i < 10; ++i) {
+    value = -i * value;
+    bst::insert(root, value);
   }
 
   std::cout << "root: " << root->value << "\n";

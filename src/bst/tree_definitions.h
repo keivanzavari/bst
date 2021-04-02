@@ -63,6 +63,28 @@ Node<T>* findMax(Node<T>* node) {
 }
 
 template <typename T>
+Node<T>* findMinParent(Node<T>* node) {
+  auto x = node;
+  while (x && x->left) {
+    if (x->left) {
+      x = x->left;
+    } else {
+      // If there is no more left is possible, then we have found the parent.
+      break;
+    }
+  }
+  return x;
+}
+
+template <typename T>
+std::pair<Node<T>*, Direction> findSuccessorParent(Node<T>* node) {
+  if (!node) {
+    return node;
+  }
+  return {findMinParent(node->right), Direction::LEFT};
+}
+
+template <typename T>
 Node<T>* findSuccessor(Node<T>* node) {
   if (!node) {
     return node;

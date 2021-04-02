@@ -132,10 +132,15 @@ Node<T>* delete_node(Node<T>* node) {
     } else {
       // When the to-be-deleted node has both left and right children.
       // Find predecessor or successor and replace the node with that one. Here we find successor.
-      node = findSuccessor(node);
+      // this operation should also return the parent of the successor so that we can remove its child.
+      auto [parent, direction] = findSuccessorParent(node);
+      if (direction == Direction::LEFT) {
+        node = parent->left;
+        parent->left = nullptr;
+      }
     }
     //   res = correctHeight(res);
-  // }
+  }
   return node;
 }
 

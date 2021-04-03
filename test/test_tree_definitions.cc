@@ -1,3 +1,4 @@
+#include <catch2/catch.hpp>
 #include <fstream>
 
 #include "bst/dot_writer.h"
@@ -78,12 +79,10 @@ void testFindMin() {
   std::cout << "min value: " << min_node->value << "\n";
 }
 
-}  // namespace bst
-
-int main() {
+TEST_CASE() {
   bst::testFindMin();
   // bst::testInsert();
   // bst::testRightRotation();
   // bst::testLeftRotation();
-  return 0;
 }
+}  // namespace bst

@@ -1,3 +1,4 @@
+#include <catch2/catch.hpp>
 #include <fstream>
 
 #include "bst/avl_tree.h"
@@ -62,11 +63,10 @@ void testRightLeft() {
   }
 }
 
-}  // namespace avl
-int main() {
-  avl::testRightRight();
-  avl::testLeftLeft();
-  avl::testLeftRight();
-  avl::testRightLeft();
-  return 0;
+TEST_CASE("test_dot_writer", "dot witer") {
+  testRightRight();
+  testLeftLeft();
+  testLeftRight();
+  testRightLeft();
 }
+}  // namespace avl

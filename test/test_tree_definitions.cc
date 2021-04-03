@@ -79,7 +79,7 @@ void testFindMin() {
   std::cout << "min value: " << min_node->value << "\n";
 }
 
-TEST_CASE() {
+TEST_CASE("TestBst", "TestFunctions") {
   bst::testFindMin();
   // bst::testInsert();
   // bst::testRightRotation();

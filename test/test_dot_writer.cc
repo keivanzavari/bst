@@ -5,7 +5,7 @@
 #include "bst/dot_writer.h"
 #include "bst/tree_definitions.h"
 
-TEST_CASE("test_dot_writer", "dot witer") {
+TEST_CASE("DotWriter", "SimpleTest") {
   bst::Node<int>* root = nullptr;
   root = bst::insert(root, 100);
   int value = 2;

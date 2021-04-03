@@ -63,7 +63,7 @@ void testRightLeft() {
   }
 }
 
-TEST_CASE("test_dot_writer", "dot witer") {
+TEST_CASE("TestAvlInsert", "TestMultipleBalancingCases") {
   testRightRight();
   testLeftLeft();
   testLeftRight();
